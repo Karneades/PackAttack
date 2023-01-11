@@ -69,7 +69,7 @@ list](https://mail.python.org/pipermail/security-announce/2017-September/000000.
 
 [Other](https://thenewstack.io/python-package-repository-struggles-deal-typosquatting/) [articles](https://nakedsecurity.sophos.com/2017/09/19/pypi-python-repository-hit-by-typosquatting-sneak-attack/) [writing](https://arstechnica.com/information-technology/2017/09/devs-unknowingly-use-malicious-modules-put-into-official-python-repository) [about](https://www.golem.de/news/pypi-boesartige-python-pakete-entdeckt-1709-130098.html) [the](https://www.reddit.com/r/netsec/comments/4n4w2h/taking_over_17000_hosts_by_typosquatting_package/) [incident](https://www.bleepingcomputer.com/news/security/ten-malicious-libraries-found-on-pypi-python-package-index/).
 
-In **2019**, there was a typo package for `dateutil` in PyPI ([Github issue](https://github.com/dateutil/dateutil/issues/984))
+In **December 2019**, there was a typo package for `dateutil` in PyPI ([Github issue](https://github.com/dateutil/dateutil/issues/984))
 
 > There is a fake version of this package called python3-dateutil on PyPI that contains additional imports of the jeIlyfish package (itself a fake version of the jellyfish package, that first L is an I). That package in turn contains malicious code starting at line 313 in jeIlyfish/_jellyfish.py
 
