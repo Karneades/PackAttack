@@ -1,4 +1,4 @@
-# PackAtt&ck - List attacks against package repository
+# PackAtt&ck - List attacks against software packages
 
 PackAtt&ck is a list of various package manager attacks using two commons
 attacks: typosquatting and dependency confusion.
