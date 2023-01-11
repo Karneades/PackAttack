@@ -1,36 +1,29 @@
 # PackAtt&ck - A collection of package repository attacks
 
-PackAtt&ck is a list of various package manager attacks using two commons attacks: typosquatting and dependency confusion. By using typosquatting attackers use similar names of targeted packages and with dependency confusion attackers take advantage of malicious package placed in public repositories which are then installed due to higher priority of these package repositories.
+PackAtt&ck is a list of various package manager attacks using two commons
+attacks: typosquatting and dependency confusion. By using typosquatting
+attackers use similar names of targeted packages to distribute malicious
+packages and with dependency confusion attackers take advantage of malicious
+package placed in public repositories which are then installed due to higher
+priority of these package repositories.
 
 > The attack does not exploit a new technical vulnerability, it rather tries to
 > trick people into installing packages that they not intended to run on their
 > systems.
 
-The attacks are possible to the nature of community repositories used to provide
-an easy way for publishing and installing packages. 
+The attacks are possible to the nature of community repositories used to
+provide an easy way for publishing and installing packages. 
 
-Common package managers are for example PyPi for Python, rubygems.org for Ruby, npmjs.com for Node.js and
-Javascript and the PowerShell Gallery (PSGallery) for PowerShell.
+Common package managers are for example PyPi for Python, rubygems.org for
+Ruby, npmjs.com for Node.js and Javascript and the PowerShell Gallery
+(PSGallery) for PowerShell.
 
-[pytosquatting project and awesome research by Benjamin Bach and Hanno Böck from 2016/2017](https://pytosquatting.overtag.dk/)
+The topic is well-known and a lot of research was done in this area. Here some
+references to mention a few: [pytosquatting project and awesome research by Benjamin Bach and Hanno Böck from 2016/2017](https://pytosquatting.overtag.dk/), [write-up about this attack vector against programming language package managers](http://incolumitas.com/2016/06/08/typosquatting-package-managers/), another [awesome and in-depth blog post about that topic](http://incolumitas.com/2016/06/08/typosquatting-package-managers/) and after the npm typosquatting incident in 2017 [Chester Burbidge made further research about the problem of typosquatted packages](https://blog.scottlogic.com/2018/02/27/hunting-typosquatters-on-npm.html). 
 
-Despite the [well-known attack vector against programming language package managers](http://incolumitas.com/2016/06/08/typosquatting-package-managers/)
+## Collection of attacks
 
-This is [an awesome and in-depth blog post about that topic](http://incolumitas.com/2016/06/08/typosquatting-package-managers/). For
-
-
-After the npm typosquatting incident in 2017 [Chester Burbidge made further research about the problem of typosquatted packages](https://blog.scottlogic.com/2018/02/27/hunting-typosquatters-on-npm.html).
-
-He used the levenshtein distance to search for malicious packages. And now for
-the last time for people seeking yet another time for numbers: look at section
-"results" once more.
-
-## Background on typosquatting package managers
-Bad stories are well-known for targeted PyPI or npm packages. Popular packages
-were targeted through similarly named (typosquatted) packages which spread
-backdoored version of them.
-In September 2017 for example was the `urllib3` package targeted by using the
-package named `urllib`.
+In September 2017 the `urllib3` package targeted by using the package named `urllib`.
 
 > Protect yourself from Python typosquatting attacks with pipsec
 > https://www.pytosquatting.org/  #supplychain #attack #Python
@@ -48,10 +41,7 @@ A [thorough write up after the notification of malicious packages by the PyPI
 administrators is found on the mailing
 list](https://mail.python.org/pipermail/security-announce/2017-September/000000.html).
 
-[Other](https://thenewstack.io/python-package-repository-struggles-deal-typosquatting/) [articles](https://nakedsecurity.sophos.com/2017/09/19/pypi-python-repository-hit-by-typosquatting-sneak-attack/) [writing](https://arstechnica.com/information-technology/2017/09/devs-unknowingly-use-malicious-modules-put-into-official-python-repository) [about](https://www.golem.de/news/pypi-boesartige-python-pakete-entdeckt-1709-130098.html) [the](https://www.reddit.com/r/netsec/comments/4n4w2h/taking_over_17000_hosts_by_typosquatting_package/) [incident](https://www.bleepingcomputer.com/news/security/ten-malicious-libraries-found-on-pypi-python-package-index/) also exists.
-
-Besides real attacks, [research for finding and preventing malicious actors
-uploading typosquatted packages was also made](https://pytosquatting.overtag.dk/).
+[Other](https://thenewstack.io/python-package-repository-struggles-deal-typosquatting/) [articles](https://nakedsecurity.sophos.com/2017/09/19/pypi-python-repository-hit-by-typosquatting-sneak-attack/) [writing](https://arstechnica.com/information-technology/2017/09/devs-unknowingly-use-malicious-modules-put-into-official-python-repository) [about](https://www.golem.de/news/pypi-boesartige-python-pakete-entdeckt-1709-130098.html) [the](https://www.reddit.com/r/netsec/comments/4n4w2h/taking_over_17000_hosts_by_typosquatting_package/) [incident](https://www.bleepingcomputer.com/news/security/ten-malicious-libraries-found-on-pypi-python-package-index/).
 
 In August 2017 an [incident occurred regarding the npm package
 cross-env](https://twitter.com/kentcdodds/status/892372685048627200). The name
@@ -78,7 +68,7 @@ and [different](https://www.theregister.co.uk/2017/08/02/typosquatting_npm/)
 [about](https://threatpost.com/attackers-use-typo-squatting-to-steal-npm-credentials/127235/)
 the incident.
 
-An example from 2019 - there's a typo package for dateutil in PyPI ([Github issue](https://github.com/dateutil/dateutil/issues/984))
+In 2019, there was a typo package for dateutil in PyPI ([Github issue](https://github.com/dateutil/dateutil/issues/984))
 
 > There is a fake version of this package called python3-dateutil on PyPI that contains additional imports of the jeIlyfish package (itself a fake version of the jellyfish package, that first L is an I). That package in turn contains malicious code starting at line 313 in jeIlyfish/_jellyfish.py
 
