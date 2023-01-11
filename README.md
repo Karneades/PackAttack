@@ -24,7 +24,7 @@ references to mention a few: [pytosquatting project and awesome research by Benj
 
 ## Collection of attacks
 
-In August 2017 an [incident occurred regarding the npm package
+In **August 2017** an [incident occurred regarding the npm package
 cross-env](https://twitter.com/kentcdodds/status/892372685048627200). The name
 `crossenv` (without the dash) was used to steal information from users. 
 > it looks like this npm package is stealing env variables on install, using
@@ -49,7 +49,7 @@ and [different](https://www.theregister.co.uk/2017/08/02/typosquatting_npm/)
 [about](https://threatpost.com/attackers-use-typo-squatting-to-steal-npm-credentials/127235/)
 the incident.
 
-In September 2017 the `urllib3` package targeted by using the package named `urllib`.
+In **September 2017** the `urllib3` package targeted by using the package named `urllib`.
 
 > Protect yourself from Python typosquatting attacks with pipsec
 > https://www.pytosquatting.org/  #supplychain #attack #Python
@@ -69,11 +69,11 @@ list](https://mail.python.org/pipermail/security-announce/2017-September/000000.
 
 [Other](https://thenewstack.io/python-package-repository-struggles-deal-typosquatting/) [articles](https://nakedsecurity.sophos.com/2017/09/19/pypi-python-repository-hit-by-typosquatting-sneak-attack/) [writing](https://arstechnica.com/information-technology/2017/09/devs-unknowingly-use-malicious-modules-put-into-official-python-repository) [about](https://www.golem.de/news/pypi-boesartige-python-pakete-entdeckt-1709-130098.html) [the](https://www.reddit.com/r/netsec/comments/4n4w2h/taking_over_17000_hosts_by_typosquatting_package/) [incident](https://www.bleepingcomputer.com/news/security/ten-malicious-libraries-found-on-pypi-python-package-index/).
 
-In 2019, there was a typo package for `dateutil` in PyPI ([Github issue](https://github.com/dateutil/dateutil/issues/984))
+In **2019**, there was a typo package for `dateutil` in PyPI ([Github issue](https://github.com/dateutil/dateutil/issues/984))
 
 > There is a fake version of this package called python3-dateutil on PyPI that contains additional imports of the jeIlyfish package (itself a fake version of the jellyfish package, that first L is an I). That package in turn contains malicious code starting at line 313 in jeIlyfish/_jellyfish.py
 
-In April 2020, _The Hacker News_ published a story about [Over 700 Malicious Typosquatted Libraries Found On RubyGems Repository](https://thehackernews.com/2020/04/rubygem-typosquatting-malware.html), citation from the blog post:
+In **April 2020**, _The Hacker News_ published a story about [Over 700 Malicious Typosquatted Libraries Found On RubyGems Repository](https://thehackernews.com/2020/04/rubygem-typosquatting-malware.html), citation from the blog post:
 
 > As developers increasingly embrace off-the-shelf software components 
 into their apps and services, threat actors are abusing open-source 
@@ -86,7 +86,7 @@ on.
 attackers were caught recently distributing through the RubyGems 
 repository.
 
-In October 2021, a typo package for `mitmproxy` was in PyPI which includes an RCE ([Tweet](https://twitter.com/maximilianhils/status/1447525552370458625), [article on bleepingcomputer](https://www.bleepingcomputer.com/news/security/pypi-removes-mitmproxy2-over-code-execution-concerns/)).
+In **October 2021**, a typo package for `mitmproxy` was in PyPI which includes an RCE ([Tweet](https://twitter.com/maximilianhils/status/1447525552370458625), [article on bleepingcomputer](https://www.bleepingcomputer.com/news/security/pypi-removes-mitmproxy2-over-code-execution-concerns/)).
 
 > Copycat package could trick devs into falling for 'newer' version
 
@@ -94,12 +94,12 @@ Further articles from October 2021 about typosquatting NPM packages: [NPM packag
 
 > The two poisoned libraries – `noblox.js-proxy` and `noblox.js-proxies` – were typosquatting (named to be confusingly similar to) noblox.js, a Roblox game API wrapper available on NPM and as a standalone download.
 
-On 23rd March 2022 JFrog published an article about a [Large-scale npm attack targets Azure developers with malicious packages](https://jfrog.com/blog/large-scale-npm-attack-targets-azure-developers-with-malicious-packages/).
+On **23rd March 2022** JFrog published an article about a [Large-scale npm attack targets Azure developers with malicious packages](https://jfrog.com/blog/large-scale-npm-attack-targets-azure-developers-with-malicious-packages/).
 > The attacker seemed to target all npm developers that use any of the packages under the @azure scope, with a typosquatting attack. In addition to the @azure scope, a few packages from the following scopes were also targeted –  @azure-rest, @azure-tests, @azure-tools and @cadl-lang.
 
 > Since this set of legitimate packages is downloaded tens of millions of times each week, there is a high chance that some developers will be successfully fooled by the typosquatting attack.
 
-On January 2023, [PyTorch discloses malicious dependency chain compromise over holidays](https://www.bleepingcomputer.com/news/security/pytorch-discloses-malicious-dependency-chain-compromise-over-holidays/)
+In **January 2023**, [PyTorch discloses malicious dependency chain compromise over holidays](https://www.bleepingcomputer.com/news/security/pytorch-discloses-malicious-dependency-chain-compromise-over-holidays/)
 
 > PyTorch has identified a malicious dependency with the same name as the framework's `torchtriton` library. This has led to a successful compromise via the dependency confusion attack vector.
 
