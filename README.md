@@ -1,15 +1,16 @@
-# PackAtt&ck - A collection of package repository attacks
+# PackAtt&ck - List attacks against package repository
 
 PackAtt&ck is a list of various package manager attacks using two commons
-attacks: typosquatting and dependency confusion. By using typosquatting
-attackers use similar names of targeted packages to distribute malicious
-packages and with dependency confusion attackers take advantage of malicious
-package placed in public repositories which are then installed due to higher
-priority of these package repositories.
+attacks: typosquatting and dependency confusion.
 
 > The attack does not exploit a new technical vulnerability, it rather tries to
 > trick people into installing packages that they not intended to run on their
 > systems.
+
+By using typosquatting attackers use similar names of targeted packages to
+distribute malicious packages and with dependency confusion attackers take
+advantage of malicious package placed in public repositories which are then
+installed due to higher priority of these package repositories.
 
 The attacks are possible to the nature of community repositories used to
 provide an easy way for publishing and installing packages. 
@@ -22,26 +23,6 @@ The topic is well-known and a lot of research was done in this area. Here some
 references to mention a few: [pytosquatting project and awesome research by Benjamin Bach and Hanno Böck from 2016/2017](https://pytosquatting.overtag.dk/), [write-up about this attack vector against programming language package managers](http://incolumitas.com/2016/06/08/typosquatting-package-managers/), another [awesome and in-depth blog post about that topic](http://incolumitas.com/2016/06/08/typosquatting-package-managers/) and after the npm typosquatting incident in 2017 [Chester Burbidge made further research about the problem of typosquatted packages](https://blog.scottlogic.com/2018/02/27/hunting-typosquatters-on-npm.html). 
 
 ## Collection of attacks
-
-In September 2017 the `urllib3` package targeted by using the package named `urllib`.
-
-> Protect yourself from Python typosquatting attacks with pipsec
-> https://www.pytosquatting.org/  #supplychain #attack #Python
-
-https://twitter.com/x0rz/status/910057711391399938
-
-> SK-CSIRT identified malicious software libraries in the official Python
-> package repository, PyPI, posing as well known libraries. A prominent example
-> is a fake package urllib-1.21.1.tar.gz, based upon a well known package
-> urllib3-1.21.1.tar.gz.
-
-See good write up by the SK-CSIRT at http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/.
-
-A [thorough write up after the notification of malicious packages by the PyPI
-administrators is found on the mailing
-list](https://mail.python.org/pipermail/security-announce/2017-September/000000.html).
-
-[Other](https://thenewstack.io/python-package-repository-struggles-deal-typosquatting/) [articles](https://nakedsecurity.sophos.com/2017/09/19/pypi-python-repository-hit-by-typosquatting-sneak-attack/) [writing](https://arstechnica.com/information-technology/2017/09/devs-unknowingly-use-malicious-modules-put-into-official-python-repository) [about](https://www.golem.de/news/pypi-boesartige-python-pakete-entdeckt-1709-130098.html) [the](https://www.reddit.com/r/netsec/comments/4n4w2h/taking_over_17000_hosts_by_typosquatting_package/) [incident](https://www.bleepingcomputer.com/news/security/ten-malicious-libraries-found-on-pypi-python-package-index/).
 
 In August 2017 an [incident occurred regarding the npm package
 cross-env](https://twitter.com/kentcdodds/status/892372685048627200). The name
@@ -67,6 +48,26 @@ and [different](https://www.theregister.co.uk/2017/08/02/typosquatting_npm/)
 [wrote](https://thenewstack.io/npm-cleans-typosquatting-malware/)
 [about](https://threatpost.com/attackers-use-typo-squatting-to-steal-npm-credentials/127235/)
 the incident.
+
+In September 2017 the `urllib3` package targeted by using the package named `urllib`.
+
+> Protect yourself from Python typosquatting attacks with pipsec
+> https://www.pytosquatting.org/  #supplychain #attack #Python
+
+https://twitter.com/x0rz/status/910057711391399938
+
+> SK-CSIRT identified malicious software libraries in the official Python
+> package repository, PyPI, posing as well known libraries. A prominent example
+> is a fake package urllib-1.21.1.tar.gz, based upon a well known package
+> urllib3-1.21.1.tar.gz.
+
+See good write up by the SK-CSIRT at http://www.nbu.gov.sk/skcsirt-sa-20170909-pypi/.
+
+A [thorough write up after the notification of malicious packages by the PyPI
+administrators is found on the mailing
+list](https://mail.python.org/pipermail/security-announce/2017-September/000000.html).
+
+[Other](https://thenewstack.io/python-package-repository-struggles-deal-typosquatting/) [articles](https://nakedsecurity.sophos.com/2017/09/19/pypi-python-repository-hit-by-typosquatting-sneak-attack/) [writing](https://arstechnica.com/information-technology/2017/09/devs-unknowingly-use-malicious-modules-put-into-official-python-repository) [about](https://www.golem.de/news/pypi-boesartige-python-pakete-entdeckt-1709-130098.html) [the](https://www.reddit.com/r/netsec/comments/4n4w2h/taking_over_17000_hosts_by_typosquatting_package/) [incident](https://www.bleepingcomputer.com/news/security/ten-malicious-libraries-found-on-pypi-python-package-index/).
 
 In 2019, there was a typo package for dateutil in PyPI ([Github issue](https://github.com/dateutil/dateutil/issues/984))
 
