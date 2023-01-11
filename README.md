@@ -1,14 +1,15 @@
-# PackAtt&ck
+# PackAtt&ck - A collection of package repository attacks
 
-> PackAtt&ck is a list of various package manager attacks using two commons attacks: typosquatting and dependency confusion. By using typosquatting attackers use similar names of targeted packages and with dependency confusion attackers take advantage of malicious package placed in public repositories which are then loaded due to higher priority.
+PackAtt&ck is a list of various package manager attacks using two commons attacks: typosquatting and dependency confusion. By using typosquatting attackers use similar names of targeted packages and with dependency confusion attackers take advantage of malicious package placed in public repositories which are then installed due to higher priority of these package repositories.
 
 > The attack does not exploit a new technical vulnerability, it rather tries to
 > trick people into installing packages that they not intended to run on their
 > systems.
 
 The attacks are possible to the nature of community repositories used to provide
-an easy way for publishing and installing packages. Such package managers are
-for example PyPi for Python, rubygems.org for Ruby, npmjs.com for Node.js and
+an easy way for publishing and installing packages. 
+
+Common package managers are for example PyPi for Python, rubygems.org for Ruby, npmjs.com for Node.js and
 Javascript and the PowerShell Gallery (PSGallery) for PowerShell.
 
 [pytosquatting project and awesome research by Benjamin Bach and Hanno Böck from 2016/2017](https://pytosquatting.overtag.dk/)
