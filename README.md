@@ -1,6 +1,6 @@
-# PackAtt&ck - A list of typosqautting and dependency confusion attack
+# PackAtt&ck
 
-PackAtt&ck lists various package managers attacks using two commons attacks: typosquatting and dependency confusion. With typosquatting attackers use similar names of targeted packages and with dependency confusion attackers take advantage of malicious package placed in public repositories which are then loaded due to higher priority.
+> PackAtt&ck is a list of various package manager attacks using two commons attacks: typosquatting and dependency confusion. By using typosquatting attackers use similar names of targeted packages and with dependency confusion attackers take advantage of malicious package placed in public repositories which are then loaded due to higher priority.
 
 > The attack does not exploit a new technical vulnerability, it rather tries to
 > trick people into installing packages that they not intended to run on their
