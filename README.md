@@ -7,7 +7,7 @@ attacks: typosquatting and dependency confusion.
 > trick people into installing packages that they not intended to run on their
 > systems.
 
-By using typosquatting attackers use similar names of targeted packages to
+By using typosquatting attackers use similar named (typosquatted) packages to
 distribute malicious packages and with dependency confusion attackers take
 advantage of malicious package placed in public repositories which are then
 installed due to higher priority of these package repositories.
@@ -98,6 +98,25 @@ On 23rd March 2022 JFrog published an article about a [Large-scale npm attack ta
 > The attacker seemed to target all npm developers that use any of the packages under the @azure scope, with a typosquatting attack. In addition to the @azure scope, a few packages from the following scopes were also targeted –  @azure-rest, @azure-tests, @azure-tools and @cadl-lang.
 
 > Since this set of legitimate packages is downloaded tens of millions of times each week, there is a high chance that some developers will be successfully fooled by the typosquatting attack.
+
+On January 2023, [PyTorch discloses malicious dependency chain compromise over holidays](https://www.bleepingcomputer.com/news/security/pytorch-discloses-malicious-dependency-chain-compromise-over-holidays/)
+
+> PyTorch has identified a malicious dependency with the same name as the framework's 'torchtriton' library. This has led to a successful compromise via the dependency confusion attack vector.
+
+> The malicious 'torchtriton' dependency on PyPI shares name with the official library published on the PyTorch-nightly's repo. But, when fetching dependencies in the Python ecosystem, PyPI normally takes precedence, causing the malicious package to get pulled on your machine instead of PyTorch's legitimate one.
+
+This type of supply chain attack is known as "dependency confusion," as [first reported](https://www.bleepingcomputer.com/news/security/researcher-hacks-over-35-tech-firms-in-novel-supply-chain-attack/) by BleepingComputer in 2021, just as the attack vector was popularized by ethical hacker Alex Birsan.
+
+## Defense against typosquatting and dependency confusion
+
+Detect typosquatted packages by using scripts and use levenshtein distance or generated list of package names to search for malicious packages and report abuse.
+
+Different package managers also search for typosquatted packages (when
+uploading new packages) because the problem is well known, e.g. new package
+with a name from a already uploaded packages with just a number at the end.
+
+Reserve dummy package to prevent typosquatting and dependency confusion
+because you are in control of these package names.
 
 ## Related projects
 
