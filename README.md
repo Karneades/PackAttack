@@ -1,25 +1,25 @@
 # PackAtt&ck - List attacks against software packages
 
-PackAtt&ck is a list of various package manager attacks using two commons
+PackAtt&ck is a list of various package manager attacks using two common
 attacks: typosquatting and dependency confusion.
 
 > The attack does not exploit a new technical vulnerability, it rather tries to
 > trick people into installing packages that they not intended to run on their
 > systems.
 
-By using typosquatting attackers use similar named (typosquatted) packages to
+By using typosquatting attackers use similarly named (typosquatted) packages to
 distribute malicious packages and with dependency confusion attackers take
-advantage of malicious package placed in public repositories which are then
+advantage of malicious packages placed in public repositories (registries) which are then
 installed due to higher priority of these package repositories.
 
-The attacks are possible to the nature of community repositories used to
+The attacks are possible due to the nature of community repositories used to
 provide an easy way for publishing and installing packages. 
 
 Common package managers are for example PyPi for Python, rubygems.org for
 Ruby, npmjs.com for Node.js and Javascript and the PowerShell Gallery
 (PSGallery) for PowerShell.
 
-The topic is well-known and a lot of research was done in this area. Here some
+The topic is well-known and a lot of research was done in this area. Here are some
 references to mention a few: [pytosquatting project and awesome research by Benjamin Bach and Hanno Böck from 2016/2017](https://pytosquatting.overtag.dk/), [write-up about this attack vector against programming language package managers](http://incolumitas.com/2016/06/08/typosquatting-package-managers/), another [awesome and in-depth blog post about that topic](http://incolumitas.com/2016/06/08/typosquatting-package-managers/) and after the npm typosquatting incident in 2017 [Chester Burbidge made further research about the problem of typosquatted packages](https://blog.scottlogic.com/2018/02/27/hunting-typosquatters-on-npm.html). 
 
 ## Collection of attacks
@@ -109,11 +109,11 @@ This type of supply chain attack is known as "dependency confusion," as [first r
 
 ## Defense against typosquatting and dependency confusion
 
-Detect typosquatted packages by using scripts and use levenshtein distance or generated list of package names to search for malicious packages and report abuse.
+Detect typosquatted packages by using scripts and use levenshtein distance or generated lists of package names to search for malicious packages and report abuse.
 
 Different package managers also search for typosquatted packages (when
 uploading new packages) because the problem is well known, e.g. new package
-with a name from a already uploaded packages with just a number at the end.
+using a name from an already uploaded packages with just a number at the end.
 
 Reserve dummy package to prevent typosquatting and dependency confusion
 because you are in control of these package names.
