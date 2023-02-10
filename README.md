@@ -94,12 +94,18 @@ Further articles from October 2021 about typosquatting NPM packages: [NPM packag
 
 > The two poisoned libraries – `noblox.js-proxy` and `noblox.js-proxies` – were typosquatting (named to be confusingly similar to) noblox.js, a Roblox game API wrapper available on NPM and as a standalone download.
 
-On **23rd March 2022** JFrog published an article about a [Large-scale npm attack targets Azure developers with malicious packages](https://jfrog.com/blog/large-scale-npm-attack-targets-azure-developers-with-malicious-packages/).
+In **March 2022** JFrog published an article about a [Large-scale npm attack targets Azure developers with malicious packages](https://jfrog.com/blog/large-scale-npm-attack-targets-azure-developers-with-malicious-packages/).
 > The attacker seemed to target all npm developers that use any of the packages under the @azure scope, with a typosquatting attack. In addition to the @azure scope, a few packages from the following scopes were also targeted –  @azure-rest, @azure-tests, @azure-tools and @cadl-lang.
 
 > Since this set of legitimate packages is downloaded tens of millions of times each week, there is a high chance that some developers will be successfully fooled by the typosquatting attack.
 
-In **January 2023**, [PyTorch discloses malicious dependency chain compromise over holidays](https://www.bleepingcomputer.com/news/security/pytorch-discloses-malicious-dependency-chain-compromise-over-holidays/)
+In **August 2022** [python-drgn and bloxflip, two malicious packages, were uploaded to PyPI](https://blog.checkpoint.com/2023/02/01/the-rise-of-the-code-package-threat/).
+
+> The attackers used a typo-squatting attack, which occurs when a malicious package is uploaded with a name similar to a common package in an attempt to get users to download the malicious version. The common package that is used here is drgn, which is a debugger with an emphasis on programmability.
+
+> Another malicious package our engines detected is bloxflip. The name is a deliberate misspelling of the package Bloxflip.py that is used as an API wrapper for bloxflip.com.
+
+In **January 2023**, [PyTorch discloses malicious dependency chain compromise over holidays](https://www.bleepingcomputer.com/news/security/pytorch-discloses-malicious-dependency-chain-compromise-over-holidays/).
 
 > PyTorch has identified a malicious dependency with the same name as the framework's `torchtriton` library. This has led to a successful compromise via the dependency confusion attack vector.
 
