@@ -1,7 +1,6 @@
-# PackAtt&ck - List attacks against software packages
+# PackAtt&ck
 
-PackAtt&ck is a list of various package manager attacks using two common
-attacks: typosquatting and dependency confusion.
+PackAtt&ck is a collection of package manager attacks using typosquatting and dependency confusion against software packages.
 
 > The attack does not exploit a new technical vulnerability, it rather tries to
 > trick people into installing packages that they not intended to run on their
