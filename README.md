@@ -112,7 +112,11 @@ In **January 2023**, [PyTorch discloses malicious dependency chain compromise ov
 
 This type of supply chain attack is known as "dependency confusion," as [first reported](https://www.bleepingcomputer.com/news/security/researcher-hacks-over-35-tech-firms-in-novel-supply-chain-attack/) by BleepingComputer in 2021, just as the attack vector was popularized by ethical hacker Alex Birsan.
 
+In **Mai 2023**, [A new stealthier type of Typosquatting attack spotted, targeting NPM](https://medium.com/checkmarx-security/a-new-stealthier-type-of-typosquatting-attack-spotted-targeting-npm-e03526faf6a7) was published, showing that NPM packages until 2017 were allowed to use lower and upper case letters, which changed back then but uploading new modules using only lower case letters for these older packages was possible until now. Attacker were able to upload such packages and only the letter case was different between legitimate and malicious package.
+
 ## Defense against typosquatting and dependency confusion
+
+Only allow the same name once - don't differentiate between upper or lowercase latters.
 
 Detect typosquatted packages by using scripts and use levenshtein distance or generated lists of package names to search for malicious packages and report abuse.
 
